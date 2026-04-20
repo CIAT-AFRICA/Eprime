@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elixion Prime International | Cleaning, Procurement & Manufacturing</title>
+
+  <meta name="description"
+    content="Elixion Prime provides professional cleaning services, fumigation, procurement, and manufacturing of consumables in Nigeria.">
+  <link rel="canonical" href="https://www.elixionprimeinternational.com/">
+  <meta property="og:title" content="Elixion Prime International | Cleaning, Procurement & Manufacturing">
+  <meta property="og:description"
+    content="Elixion Prime provides professional cleaning services, fumigation, procurement, and manufacturing of consumables in Nigeria.">
+  <meta property="og:url" content="https://www.elixionprimeinternational.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.elixionprimeinternational.com/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Elixion Prime International | Cleaning, Procurement & Manufacturing">
+  <meta name="twitter:description"
+    content="Elixion Prime provides professional cleaning services, fumigation, procurement, and manufacturing of consumables in Nigeria.">
+  <meta name="twitter:image" content="https://www.elixionprimeinternational.com/logo.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Schema Injection -->
+  <script src="schema.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="components.css">
+  
+  <!-- Premium Homepage Overrides -->
+  <style>
+    .hero {
+      position: relative;
+      background-image: linear-gradient(to right, rgba(2, 26, 63, 0.95) 0%, rgba(2, 26, 63, 0.7) 60%, rgba(2, 26, 63, 0.3) 100%), url('hero-bg.png') !important;
+      background-size: cover !important;
+      background-position: center !important;
+      padding: clamp(8rem, 15vw, 12rem) 0;
+      color: var(--color-white) !important;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 750px;
+    }
+
+    .hero h1 {
+      color: var(--color-white) !important;
+      font-size: clamp(3rem, 6vw, 4.5rem);
+      margin-bottom: 1.5rem;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      text-wrap: balance;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2.5rem;
+      color: #D3D9E6 !important;
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-btns .btn {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+    }
+
+    .features-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-item {
+      background: var(--color-white);
+      padding: 2.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(2, 26, 63, 0.05);
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(212, 168, 67, 0.1);
+      transition: all 0.4s ease;
+    }
+
+    .feature-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--color-gold);
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: transform 0.4s ease;
+    }
+
+    .feature-item:hover::before {
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+
+    .feature-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background: rgba(212, 168, 67, 0.1);
+      font-size: 1.75rem;
+      color: var(--color-gold);
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-item h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--color-primary);
+    }
+    
+    .feature-item p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .testimonials {
+      background-color: var(--color-primary) !important;
+      color: var(--color-white) !important;
+      position: relative;
+    }
+
+    .testimonials .section-subtitle,
+    .testimonials h2 {
+      color: var(--color-white) !important;
+    }
+
+    .testimonial-card {
+      background: rgba(255, 255, 255, 0.03) !important;
+      backdrop-filter: blur(10px);
+      padding: 2.5rem;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      border-color: rgba(212, 168, 67, 0.3) !important;
+    }
+
+    .testimonial-text {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      color: #E0E0E0 !important;
+      position: relative;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: var(--color-gold) !important;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .testimonial-author::before {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background: var(--color-gold);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container" style="position: relative;">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Elixion Prime logo"></a>
+      <nav aria-label="Main Navigation">
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="dropdown">
+            <a href="services.html" class="nav-link">Services</a>
+            <div class="dropdown-content">
+              <a href="cleaning.html">Professional Cleaning</a>
+              <a href="fumigation.html">Fumigation & Pest Control</a>
+              <a href="services.html">Procurement</a>
+              <a href="manufacturing.html">Manufacturing</a>
+              <a href="energy.html">Energy</a>
+              <a href="construction.html">Construction</a>
+            </div>
+          </li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="manufacturing.html" class="nav-link">Manufacturing</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="#" onclick="window.open(window.buildWaLink('Hello Elixion Prime, I’d like to request a quote. Service: [Cleaning/Fumigation/Procurement/Manufacturing/Energy/Construction]. Location: [ ].'), '_blank'); return false;" class="btn btn-primary" style="margin-left: 1rem;">Request Quote</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Excellence in Every Dimension</h1>
+        <p>Elixion Prime International Limited delivers structured,
+          safety-driven cleaning and pest control solutions for offices,
+          estates, commercial facilities, and industrial environments — executed with precision and professionalism.
+        </p>
+        <div class="hero-btns">
+          <a href="#"
+            onclick="window.open(window.buildWaLink('Hello Elixion Prime, I’d like to request a quote. Service: [Cleaning/Fumigation/Procurement/Manufacturing/Energy/Construction]. Location: [ ].'), '_blank'); return false;"
+            class="btn btn-primary">Request Quote</a>
+          <a href="https://wa.me/2349034168823" class="btn btn-secondary" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Divisions -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">What We Do</span>
+        <h2>Our Core Divisions</h2>
+      </div>
+      <div class="card-grid">
+        <a href="cleaning.html" class="card">
+          <img src="cleaning-service.png" alt="Cleaning Services" class="card-img" loading="lazy" decoding="async">
+          <div class="card-body">
+            <h3 class="card-title">Professional Cleaning</h3>
+            <p class="card-text">Comprehensive cleaning services for corporate, industrial, and residential facilities
+              ensuring spotless environments.</p>
+          <span style="display:inline-block; margin-top: 1rem; color: var(--color-gold); font-weight: 600;">Learn More &rarr;</span>
+          </div>
+        </a>
+        <a href="fumigation.html" class="card">
+          <img src="fumigation-service.png" alt="Fumigation" class="card-img" loading="lazy" decoding="async">
+          <div class="card-body">
+            <h3 class="card-title">Fumigation & Pest Control</h3>
+            <p class="card-text">Safe, effective, and environmentally conscious pest management solutions for all
+              sectors.</p>
+          <span style="display:inline-block; margin-top: 1rem; color: var(--color-gold); font-weight: 600;">Learn More &rarr;</span>
+          </div>
+        </a>
+        <a href="services.html" class="card">
+          <img src="procurement-service.png" alt="Procurement" class="card-img" loading="lazy" decoding="async">
+          <div class="card-body">
+            <h3 class="card-title">Procurement & Sales</h3>
+            <p class="card-text">Reliable sourcing and supply chain management for premium industrial and corporate
+              goods.</p>
+          <span style="display:inline-block; margin-top: 1rem; color: var(--color-gold); font-weight: 600;">Learn More &rarr;</span>
+          </div>
+        </a>
+        <a href="manufacturing.html" class="card">
+          <img src="manufacturing-service.png" alt="Manufacturing" class="card-img" loading="lazy" decoding="async">
+          <div class="card-body">
+            <h3 class="card-title">Manufacturing</h3>
+            <p class="card-text">Producing high-quality medical and industrial consumables including gloves, pads, and
+              tissue paper.</p>
+          <span style="display:inline-block; margin-top: 1rem; color: var(--color-gold); font-weight: 600;">Learn More &rarr;</span>
+          </div>
+        </a>
+        <a href="services.html" class="card">
+          <img src="energy-service.png" alt="Energy" class="card-img" loading="lazy" decoding="async">
+          <div class="card-body">
+            <h3 class="card-title">Energy</h3>
+            <p class="card-text">Sustainable energy solutions and infrastructure development for powering modern
+              industries.</p>
+          <span style="display:inline-block; margin-top: 1rem; color: var(--color-gold); font-weight: 600;">Learn More &rarr;</span>
+          </div>
+        </a>
+        <a href="services.html" class="card">
+          <img src="construction-service.png" alt="Construction" class="card-img" loading="lazy" decoding="async">
+          <div class="card-body">
+            <h3 class="card-title">Construction</h3>
+            <p class="card-text">Expertly managed construction services from planning to execution for commercial and
+              industrial projects.</p>
+          <span style="display:inline-block; margin-top: 1rem; color: var(--color-gold); font-weight: 600;">Learn More &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section" style="background-color: var(--color-off-white);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">The Elixion Advantage</span>
+        <h2>Why Choose Us</h2>
+      </div>
+      <div class="features-list">
+        <div class="feature-item">
+          <div class="feature-icon">★</div>
+          <h3>Uncompromising Quality</h3>
+          <p>We adhere to strict international standards across all our services and products.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🛡️</div>
+          <h3>Safety First</h3>
+          <p>Comprehensive safety protocols for our staff, clients, and the environment.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">👨‍🔧</div>
+          <h3>Trained Professionals</h3>
+          <p>Our team consists of certified experts dedicated to delivering exceptional results.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">⏱️</div>
+          <h3>Timely Delivery</h3>
+          <p>We respect your time. Punctuality is built into our operational DNA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Manufacturing Products -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Innovation Pipeline</span>
+        <h2>Manufacturing Products</h2>
+        <p style="color: var(--color-text-light);">Samples arriving next week. Secure your early bulk order quotes
+          today.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="industrial-gloves.png" alt="Industrial Gloves" class="card-img" loading="lazy" decoding="async">
+          <div class="card-body">
+            <span class="badge">Coming Soon</span>
+            <h3 class="card-title">Medical & Industrial Gloves</h3>
+            <p class="card-text">Durable, high-tensile protective gloves for medical and industrial applications.</p>
+            <a href="#"
+              onclick="window.open(window.buildWaLink('Hello Elixion Prime, I’d like to request a quote. Service: [Cleaning/Fumigation/Procurement/Manufacturing/Energy/Construction]. Location: [ ].'), '_blank'); return false;"
+              class="btn btn-outline btn-block">Request Quote</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="tissue-paper.png" alt="Tissue Paper" class="card-img" loading="lazy" decoding="async">
+          <div class="card-body">
+            <span class="badge">Coming Soon</span>
+            <h3 class="card-title">Premium Tissue Paper</h3>
+            <p class="card-text">Soft, absorbent, and eco-friendly tissue paper for commercial distribution.</p>
+            <a href="#"
+              onclick="window.open(window.buildWaLink('Hello Elixion Prime, I’d like to request a quote. Service: [Cleaning/Fumigation/Procurement/Manufacturing/Energy/Construction]. Location: [ ].'), '_blank'); return false;"
+              class="btn btn-outline btn-block">Request Quote</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="disposable-pads.png" alt="Disposable Pads" class="card-img" loading="lazy" decoding="async">
+          <div class="card-body">
+            <span class="badge">Coming Soon</span>
+            <h3 class="card-title">Disposable Pads</h3>
+            <p class="card-text">High-absorbency medical and sanitary pads manufactured to global standards.</p>
+            <a href="#"
+              onclick="window.open(window.buildWaLink('Hello Elixion Prime, I’d like to request a quote. Service: [Cleaning/Fumigation/Procurement/Manufacturing/Energy/Construction]. Location: [ ].'), '_blank'); return false;"
+              class="btn btn-outline btn-block">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Trust Badges & Partnerships -->
+  <section class="section">
+    <div class="container text-center" style="text-align: center;">
+      <span class="section-subtitle">Trusted By & Affiliated With</span>
+      <h2 style="margin-bottom: 3rem;">Our Network & Partnerships</h2>
+      <div style="display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; align-items: center; opacity: 0.7;">
+        <div style="text-align: center; font-weight: 600; font-size: 1.2rem; color: var(--color-navy); display: flex; align-items: center; gap: 0.5rem;">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg> Google Business
+        </div>
+        <div style="text-align: center; font-weight: 600; font-size: 1.2rem; color: var(--color-navy); display: flex; align-items: center; gap: 0.5rem;">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 576 512"><path d="M549.6 128.9c-20.3-39.7-65.7-56-107.5-38.6L419.6 99.1c-15.3-25.2-13.6-59.5 7.8-82.5 24.5-26.4 66.8-26.9 92-.8L553 50c26 26.6 25 69.4-3.4 94.8-13.7 12.2-14.8 33.4-2.5 47s33.4 14.8 47 2.5c46-41 47.7-110.8 5.7-153.8L566.2 6.8C525.6-32.5 457.5-31.7 418 9.3c-28.7 29.8-37.1 72.1-22.3 108.9L249.2 192.6c-48.4-37.3-118-36-164.8 3.3L15.6 265c-20.8 21-20.8 55 0 76l135.2 135.2c21 20.8 55 20.8 76 0L295.6 409c39.3-46.8 40.6-116.4 3.3-164.8l74.4-146.5c41.8-17.4 87.2-1.1 107.5 38.6 12.8 25.1 43.1 35.1 68.2 22.3s35.1-43.1 22.3-68.2.1-1.5-1.7-1.5zM226.4 390.6l-57.6 57.6c-4.2 4.2-11 4.2-15.2 0l-135.2-135.2c-4.2-4.2-4.2-11 0-15.2l57.6-57.6c4-4.1 10.6-4.4 14.9-.8l134.7 101.4c4.3 3.2 4.8 9.6 1 13.4l-11.2 11.2c-4.2 4.2-11 4.2-15.2 0L158.4 323.5c-4.2-4.2-11-4.2-15.2 0s-4.2 11 0 15.2l41.9 41.9c4.2 4.2 11 4.2 15.2 0l11.2-11.2c3.8-3.8 10-3.3 13.4 1l101.4 134.7c3.7 4.3 3.3 10.9-.9 14.9z"/></svg> VConnect
+        </div>
+        <div style="text-align: center; font-weight: 600; font-size: 1.2rem; color: var(--color-navy); display: flex; align-items: center; gap: 0.5rem;">
+             <svg width="24" height="24" fill="currentColor" viewBox="0 0 512 512"><path d="M496 128v16a8 8 0 0 1-8 8h-32v32h32a8 8 0 0 1 8 8v16a8 8 0 0 1-8 8h-32v32h32a8 8 0 0 1 8 8v16a8 8 0 0 1-8 8h-32v128h32a8 8 0 0 1 8 8v16a8 8 0 0 1-8 8H16a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h32V128H16a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h32V64h32a8 8 0 0 1 8 8v32h32a8 8 0 0 1 8 8v16a8 8 0 0 1-8 8H80v128h352V128h-32a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h32V64h32a8 8 0 0 1 8 8v32h32a8 8 0 0 1 8 8z"/></svg> Finlib Partner
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Client Feedback</span>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="card-grid">
+        <div class="testimonial-card premium-animate-up premium-delay-1">
+          <p class="testimonial-text">"Elixion Prime transformed our facility management. Their cleaning and fumigation
+            teams are incredibly thorough and professional."</p>
+          <div class="testimonial-author">Operations Manager, TechCorp</div>
+        </div>
+        <div class="testimonial-card premium-animate-up premium-delay-2">
+          <p class="testimonial-text">"Reliable procurement is hard to find. Elixion has consistently delivered our
+            industrial supplies on time and within budget."</p>
+          <div class="testimonial-author">Procurement Director, Zenith Logistics</div>
+        </div>
+        <div class="testimonial-card premium-animate-up premium-delay-3">
+          <p class="testimonial-text">"Their energy and construction divisions handled our new warehouse build
+            flawlessly. Excited for their upcoming manufacturing products."</p>
+          <div class="testimonial-author">CEO, BuildRight Ventures</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta-banner" style="background-color: var(--color-off-white) !important; color: var(--color-text-main) !important;">
+    <div class="container">
+      <h2 style="color: var(--color-navy) !important;">Ready to elevate your operational standards?</h2>
+      <a href="#"
+        onclick="window.open(window.buildWaLink('Hello Elixion Prime, I’d like to request a quote. Service: [Cleaning/Fumigation/Procurement/Manufacturing/Energy/Construction]. Location: [ ].'), '_blank'); return false;"
+        class="btn btn-primary">Get a Custom Quote</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo"><img src="logo.png" alt="Elixion Prime logo"></a>
+          <h4>Elixion Prime International Limited</h4>
+          <p>Professional cleaning, fumigation, procurement, manufacturing, energy, and construction solutions across
+            Lagos and Nigeria.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="manufacturing.html">Manufacturing</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>&#128222; <a href="tel:+2349034168823">+234 903 416 8823</a></li>
+            <li>&#9993; <a href="mailto:info@elixionprimeinternational.com">info@elixionprimeinternational.com</a></li>
+            <li>&#128205; Lekki Epe Expressway, Lekki Phase 1, Lagos, Nigeria</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div style="display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="https://wa.me/2349034168823" target="_blank" rel="noopener" aria-label="WhatsApp" style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:50%; background:rgba(212,168,67,0.1); color:var(--color-gold); transition:all 0.3s ease;">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/elixionprime" target="_blank" rel="noopener" aria-label="LinkedIn" style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:50%; background:rgba(212,168,67,0.1); color:var(--color-gold); transition:all 0.3s ease;">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+            </a>
+            <a href="https://facebook.com/elixionprime" target="_blank" rel="noopener" aria-label="Facebook" style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:50%; background:rgba(212,168,67,0.1); color:var(--color-gold); transition:all 0.3s ease;">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 448 512"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+            </a>
+            <a href="https://instagram.com/elixionprime" target="_blank" rel="noopener" aria-label="Instagram" style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:50%; background:rgba(212,168,67,0.1); color:var(--color-gold); transition:all 0.3s ease;">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Elixion Prime International Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/2349034168823" class="whatsapp-float" aria-label="Chat with Elixion on WhatsApp"
+    target="_blank" rel="noopener">
+    <svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"><!--!Font Awesome Free 6.x.x by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+      <path
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+    </svg>
+  </a>
+
+  <script type="module" src="whatsapp.js" defer></script>
+  <script src="main.js" defer></script>
+  
+  <!-- Premium Enhancements & Animations -->
+  <style>
+    /* 
+    1. Premium Header Layout & Breakout Logo Positioning 
+    */
+    .header {
+        background: rgba(2, 26, 63, 0.9) !important;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 80px; /* matches nav-container */
+        width: 140px; /* space strictly for logo */
+    }
+
+    .logo img {
+        position: absolute;
+        top: 20px; /* Push slightly down so it overlaps creatively below the 80px header */
+        height: 120px !important;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s !important;
+        transform-origin: top left;
+        filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+        z-index: 1001; /* Stay above hero */
+    }
+
+    /* Small screens: tone down logo overlap */
+    @media (max-width: 768px) {
+        .logo img {
+            height: 80px !important;
+            top: 50%;
+            transform: translateY(-50%) !important;
+        }
+    }
+
+    .footer-logo img {
+        height: 100px !important;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+        transform-origin: center center;
+    }
+
+        .logo img {
+        /* Premium Background Hover Mechanics */
+        border-radius: 100px;
+        padding: 0;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s, background-color 0.4s, padding 0.4s !important;
+    }
+
+    .logo img:hover {
+        transform: scale(1.05) !important;
+        background-color: #ffffff;
+        padding: 10px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .footer-logo img:hover {
+        transform: scale(1.05) !important;
+    }
+
+    /* 2. Advanced Button "Shine" Animation */
+    .btn-primary {
+        background: var(--color-gold) !important;
+        color: var(--color-primary) !important;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transform-style: preserve-3d;
+        border: none;
+        box-shadow: 0 4px 15px rgba(212, 168, 67, 0.3);
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(212, 168, 67, 0.4);
+    }
+
+    .btn-primary::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+        transform: skewX(-25deg);
+        animation: shine 4s infinite;
+        z-index: -1;
+    }
+
+    .hero .btn-secondary {
+        border-color: rgba(255,255,255,0.4) !important;
+        color: #fff !important;
+        backdrop-filter: blur(4px);
+    }
+    
+    .hero .btn-secondary:hover {
+        background: #fff !important;
+        color: var(--color-primary) !important;
+    }
+
+    @keyframes shine {
+        0% { left: -100%; }
+        20% { left: 200%; }
+        100% { left: 200%; }
+    }
+
+    /* 3. Advanced Card 3D Hover & Micro-interactions */
+    .card {
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease;
+        will-change: transform;
+        border: 1px solid rgba(0,0,0,0.05);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    
+    .card .card-img {
+        transition: transform 0.6s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(2, 26, 63, 0.08), 0 5px 15px rgba(2, 26, 63, 0.05);
+        border-color: rgba(212, 168, 67, 0.3);
+    }
+    
+    .card:hover .card-img {
+        transform: scale(1.05);
+    }
+
+    /* 4. Scroll Animations */
+    .premium-animate-up {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+            transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        will-change: opacity, transform;
+    }
+
+    .premium-animate-up.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .premium-delay-1 { transition-delay: 0.1s; }
+    .premium-delay-2 { transition-delay: 0.2s; }
+    .premium-delay-3 { transition-delay: 0.3s; }
+    .premium-delay-4 { transition-delay: 0.4s; }
+
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .card-img {
+        background: var(--color-off-white);
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Setup Elements for Animation
+        const targets = document.querySelectorAll('.section-subtitle, h2, .card, .feature-item, .testimonial-card');
+
+        targets.forEach((el, index) => {
+            el.classList.add('premium-animate-up');
+            // Staggered delay logic
+            if (el.parentElement && (el.parentElement.classList.contains('card-grid') || el.parentElement.classList.contains('features-list'))) {
+                const siblingIndex = Array.from(el.parentElement.children).indexOf(el);
+                const delayClass = 'premium-delay-' + ((siblingIndex % 4) + 1);
+                el.classList.add(delayClass);
+            }
+        });
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -10% 0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.premium-animate-up').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                setTimeout(() => { el.classList.add('is-visible'); }, 50);
+            } else {
+                observer.observe(el);
+            }
+        });
+    });
+  </script>
+</body>
+
+</html>
